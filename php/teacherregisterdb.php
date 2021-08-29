@@ -5,21 +5,20 @@ include 'db.php';
 $firstname =  $_POST['firstname'];
 $lastname =  $_POST['lastname'];
 $email =  $_POST['email']; 
-$college =  $_POST['college'];
+$subject =  $_POST['subject'];
 $password =  $_POST['password'];
 
 
-$sql = "INSERT INTO `teacher` (`id`, `firstname`, `lastname`, `email`, `college`, `password`)
-VALUES (NULL, '$firstname', '$lastname', '$email','$college','$password')";
+$params = array($firstname,$lastname,$email,$subject,$password);
+$sql="INSERT INTO teacher (firstname,lastname, email, subject, password)
+VALUES ( ?,?,?,?,?)";
 
+$stmt = sqlsrv_query($conn, $sql, $params);
+if ($stmt === false) {  
+    echo "Row insertion failed.\n";  
+    die(print_r(sqlsrv_errors(), true));  
+} else {  
+    header('location: ../teacherlogin.php');  
+} 
 
-if ($conn->query($sql) === TRUE) {
-    $last_id = $conn->insert_id;
-    echo '<script>alert("Login to continue")</script>';
-    header('location: ../teacherlogin.php');
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
 ?>
