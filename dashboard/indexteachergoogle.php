@@ -300,7 +300,7 @@ session_start();
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">
-                                                <a href="../logout.php">
+                                                <a href="../logout2.php">
                                                     <i class="zmdi zmdi-power"></i>Logout</a>
                                             </div>
                                         </div>
