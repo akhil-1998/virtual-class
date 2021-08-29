@@ -16,7 +16,7 @@ $google_client->setClientSecret('jjj1tX4IsZVRe-Shyk_8JfrZ');
 
 //Set the OAuth 2.0 Redirect URI
 $google_client->setRedirectUri('https://localhost/vclass/dashboard/index.php');
-$google_client->setRedirectUri('http://vclass.herokuapp.com/dashboard/index.php');
+$google_client->setRedirectUri('https://vclass.herokuapp.com/dashboard/index.php');
 
 //
 $google_client->addScope('email');
