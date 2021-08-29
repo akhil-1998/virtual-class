@@ -63,11 +63,11 @@ session_start();
                             
                         </li>
                         <li>
-                            <a href="chart.html">
-                                <i class="fas fa-chart-bar"></i>Assignments</a>
+                            <a href="#">
+                                <i class="fas fa-desktop"></i>Assignments</a>
                         </li>
                         <li>
-                            <a href="table.html">
+                            <a href="#">
                                 <i class="fas fa-table"></i>Tests</a>
                         </li>
                         <li>
@@ -76,12 +76,16 @@ session_start();
                         </li>
 
                         <li>
-                            <a href="form.html">
+                            <a href="#">
                                 <i class="far fa-check-square"></i>Teachers</a>
                         </li>
                         <li>
-                            <a href="chart.html">
+                            <a href="#">
                                 <i class="fas fa-chart-bar"></i>Library</a>
+                        </li>
+                        <li>
+                            <a href="../zoom.php">
+                                <i class="fas fa-desktop"></i>Zoom</a>
                         </li>
                         
                 </div>
