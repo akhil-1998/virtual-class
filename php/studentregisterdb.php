@@ -18,7 +18,7 @@ if ($stmt === false) {
     echo "Row insertion failed.\n";  
     die(print_r(sqlsrv_errors(), true));  
 } else {  
-    header('location: ../teacherlogin.php');  
+    header('location: ../studentlogin.php');  
 } 
 
 ?>
